@@ -59,19 +59,19 @@
 
         misc_layer {
             bindings = <
-&kp K_PLAY_PAUSE  &kp K_MUTE    &none          &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &sys_reset     &sys_reset   &none         &none         &none         &none         &none
-&kp K_NEXT        &kp K_VOL_UP  &kp C_BRI_INC  &kp GLOBE                          &kp C_AC_SEARCH                         &none          &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp K_PREV        &kp K_VOL_DN  &kp C_BRI_DEC  &none                              &none                                   &bootloader    &bootloader  &none         &none         &none         &none         &none
+&kp K_PLAY_PAUSE  &kp K_MUTE    &none          &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &sys_reset     &sys_reset   &none         &none         &none         &none         &bt BT_CLR
+&kp K_NEXT        &kp K_VOL_UP  &kp C_BRI_INC  &kp GLOBE                          &kp C_AC_SEARCH                         &none          &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp K_PREV        &kp K_VOL_DN  &kp C_BRI_DEC  &none                              &none                                   &bootloader    &bootloader  &none         &bt BT_PRV    &bt BT_NXT    &none         &none
                                                &none                              &trans                                  &none          &none        &trans        &none
             >;
         };
 
         mouse {
             bindings = <
-&trans      &trans  &trans  &trans    &trans  &trans          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &to 0
-&kp LCTRL   &trans  &trans  &trans    &trans  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &to 1
-&kp LSHIFT  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans        &trans           &trans  &trans
-                            &kp LCMD  &trans  &kp LEFT_ALT    &mkp LCLK       &mkp RCLK       &mkp MCLK
+&none       &none  &none  &none     &none  &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &to 0
+&kp LCTRL   &none  &none  &none     &none  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &to 1
+&kp LSHIFT  &none  &none  &none     &none  &none           &none           &none           &none         &none            &none  &none
+                          &kp LCMD  &none  &kp LEFT_ALT    &mkp LCLK       &mkp RCLK       &mkp MCLK
             >;
         };
     };
