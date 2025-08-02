@@ -21,37 +21,37 @@
 
         default_layer {
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &mt LCTRL SQT
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 3  &kp LALT
+&kp TAB           &kp Q  &kp W  &kp E      &kp R  &kp T          &kp Y    &kp U  &kp I       &kp O    &kp P     &kp BSPC
+&mt LEFT_ALT ESC  &kp A  &kp S  &kp D      &kp F  &kp G          &kp H    &kp J  &kp K       &kp L    &kp SEMI  &mt LEFT_COMMAND SQT
+&kp LSHFT         &kp Z  &kp X  &kp C      &kp V  &kp B          &kp N    &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+                                &kp LCTRL  &mo 2  &lt 5 SPACE    &kp RET  &mo 3  &kp RSHIFT
             >;
         };
 
         colemak_layer {
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F     &kp P  &kp G        &kp J    &kp L  &kp U      &kp Y       &kp SEMI   &kp BSPC
-&mt LCTRL ESC  &kp A  &kp R  &kp S     &kp T  &kp D        &kp H    &kp N  &kp E      &kp I       &kp O      &mt LCTRL SQT
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B        &kp K    &kp M  &kp COMMA  &kp PERIOD  &kp SLASH  &kp RSHFT
-                             &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 3  &kp LALT
-            >;
-        };
-
-        lower_layer {
-            bindings = <
-&trans          &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&mt LCTRL F11   &kp F1    &kp F2  &kp F3    &kp F4    &kp F5          &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &mt LEFT_CONTROL GRAVE
-&mt LSHIFT F12  &kp F6    &kp F7  &kp F8    &kp F9    &kp F10         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &mt RIGHT_SHIFT TILDE
-                                  &trans    &trans    &kp LEFT_ALT    &trans     &mo 4      &trans
+&kp TAB           &kp Q  &kp W  &kp F      &kp P  &kp G          &kp J    &kp L  &kp U            &kp Y       &kp SEMI   &kp BSPC
+&mt LEFT_ALT ESC  &kp A  &kp R  &kp S      &kp T  &kp D          &kp H    &kp N  &kp E            &kp I       &kp O      &mt LEFT_GUI SQT
+&kp LSHFT         &kp Z  &kp X  &kp C      &kp V  &kp B          &kp K    &kp M  &kp COMMA        &kp PERIOD  &kp SLASH  &kp RSHFT
+                                &kp LCTRL  &mo 2  &lt 5 SPACE    &kp RET  &mo 3  &kp RIGHT_SHIFT
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &kp N1     &kp N2      &kp N3    &kp N4         &kp N5            &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans  &kp CAPS   &kp INSERT  &kp HOME  &kp PAGE_UP    &none             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &to 5   &trans
-&trans  &kp PSCRN  &kp DELETE  &kp END   &kp PAGE_DOWN  &kp LANGUAGE_1    &to 0     &to 1     &trans  &trans     &trans  &trans
-                               &trans    &mo 4          &trans            &trans    &trans    &trans
+&trans  &kp N1        &kp N2      &kp N3    &kp N4         &kp N5            &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &kp CAPSLOCK  &kp INSERT  &kp HOME  &kp PG_UP      &none             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &to 5   &trans
+&trans  &kp PSCRN     &kp DELETE  &kp END   &kp PAGE_DOWN  &kp LANGUAGE_1    &to 0     &to 1     &trans  &trans     &trans  &trans
+                                  &trans    &trans         &trans            &trans    &mo 4     &trans
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+&kp GRAVE         &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
+&mt LEFT_ALT F11  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
+&mt LSHIFT F12    &kp F6    &kp F7  &kp F8    &kp F9    &kp F10      &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
+                                    &trans    &mo 4     &trans       &trans     &trans     &trans
             >;
         };
 
@@ -66,10 +66,10 @@
 
         mouse {
             bindings = <
-&none       &none  &none  &none     &none  &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &to 0
-&kp LCTRL   &none  &none  &none     &none  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &to 1
-&kp LSHIFT  &none  &none  &none     &none  &none           &none           &none           &none         &none            &none  &none
-                          &kp LCMD  &none  &kp LEFT_ALT    &mkp LCLK       &mkp RCLK       &mkp MCLK
+&none         &none  &none  &none      &none  &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &to 0
+&kp LEFT_ALT  &none  &none  &none      &none  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &kp LGUI
+&kp LSHIFT    &none  &none  &none      &none  &none    &none           &none           &none         &none            &none  &none
+                            &kp LCTRL  &none  &none    &mkp LCLK       &mkp RCLK       &mkp MCLK
             >;
         };
     };
