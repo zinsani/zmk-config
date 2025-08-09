@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -43,9 +44,9 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE  &kp EXCL        &kp AT      &kp HASH         &kp DLLR                           &kp PRCNT                                 &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &bt BT_PRV      &bt BT_NXT  &mkp LCLK        &mkp RCLK                          &mkp MCLK                                 &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
-&trans     &bt BT_CLR_ALL  &bt BT_CLR  &kp C_AC_SEARCH  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH         &kp DLLR                           &kp PRCNT                                 &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
+&trans     &bt BT_PRV    &bt BT_NXT    &mkp LCLK        &mkp RCLK                          &mkp MCLK                                 &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
+&trans     &out OUT_USB  &out OUT_BLE  &kp C_AC_SEARCH  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
                                        &trans           &trans                             &trans                                    &trans     &trans     &trans
             >;
 
@@ -54,10 +55,10 @@
 
         raise_layer {
             bindings = <
-&tog 1  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5              &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &trans
-&trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &mt LEFT_ALT PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &none         &none         &rgb_ug RGB_EFF     &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &mt LEFT_SHIFT PAGE_DOWN
-                                         &trans        &kp DELETE    &mt LEFT_GUI INS    &trans           &trans           &trans
+&tog 1  &kp N1           &kp N2          &kp N3           &kp N4        &kp N5              &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &trans
+&trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4        &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &mt LEFT_ALT PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &bt BT_CLR    &bt BT_CLR_ALL      &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &mt LEFT_SHIFT PAGE_DOWN
+                                         &trans           &kp DELETE    &mt LEFT_GUI INS    &trans           &trans           &trans
             >;
 
             label = "number";
