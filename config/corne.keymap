@@ -64,10 +64,10 @@
 
         raise_layer {
             bindings = <
-&tog 1  &kp N1           &kp N2          &kp N3           &kp N4        &kp N5              &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &trans
-&trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4        &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &mt LEFT_ALT PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &bt BT_CLR    &bt BT_CLR_ALL      &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &mt LEFT_SHIFT PAGE_DOWN
-                                         &trans           &kp DELETE    &mt LEFT_GUI INS    &trans           &trans           &trans
+&tog 1  &kp N1           &kp N2          &kp N3           &kp N4               &kp N5            &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &trans
+&trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3         &bt BT_SEL 4      &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &mt LEFT_ALT PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &bt BT_CLR           &bt BT_CLR_ALL    &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &mt LEFT_SHIFT PAGE_DOWN
+                                         &trans           &mt LEFT_GUI DELETE  &kp INS           &trans           &trans           &trans
             >;
 
             label = "number";
