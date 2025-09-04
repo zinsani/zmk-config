@@ -42,7 +42,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ESC_CAPS";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             bindings = <&mt LEFT_ALT ESCAPE>, <&kp CAPSLOCK>;
         };
     };
