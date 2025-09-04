@@ -35,7 +35,7 @@
             #binding-cells = <0>;
             bindings = <&lt 2 ESCAPE>, <&kp TAB>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         td_esc_caps: td_esc_caps {
