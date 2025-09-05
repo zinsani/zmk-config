@@ -25,11 +25,13 @@
         esc_and_a_to_caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <14 13>;
+            layers = <0 1>;
         };
 
         bluetooth_layer {
             bindings = <&mo 5>;
             key-positions = <39 40>;
+            layers = <0 1>;
         };
     };
 
