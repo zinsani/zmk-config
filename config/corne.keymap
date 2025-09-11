@@ -23,7 +23,7 @@
         compatible = "zmk,combos";
 
         esc_and_a_to_caps {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&kp CAPS>;
             key-positions = <7 7 8>;
             layers = <0 1>;
             timeout-ms = <30>;
