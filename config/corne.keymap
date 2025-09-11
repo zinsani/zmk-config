@@ -24,7 +24,7 @@
 
         esc_and_a_to_caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <14 13>;
+            key-positions = <6 7>;
             layers = <0 1>;
         };
 
@@ -34,19 +34,34 @@
             layers = <0 1>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <19 20>;
+        left_shift_esc {
+            bindings = <&mt LEFT_SHIFT ESCAPE>;
+            key-positions = <16 17>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <31 32>;
+        right_shift_enter {
+            bindings = <&mt RIGHT_SHIFT ENTER>;
+            key-positions = <19 20>;
         };
 
         toggle_colemak {
             bindings = <&tog 1>;
-            key-positions = <1 0>;
+            key-positions = <1 2>;
+        };
+
+        left_option {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <13 14>;
+        };
+
+        right_alt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <21 22>;
+        };
+
+        backspace {
+            bindings = <&none>;
+            key-positions = <9 10>;
         };
     };
 
