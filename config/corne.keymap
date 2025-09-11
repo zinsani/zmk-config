@@ -36,7 +36,7 @@
 
         left_shift_esc {
             bindings = <&mt LEFT_SHIFT ESCAPE>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
         };
 
         right_shift_enter {
