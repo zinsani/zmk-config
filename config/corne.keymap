@@ -24,7 +24,7 @@
 
         esc_and_a_to_caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <6 7>;
+            key-positions = <7 7 8>;
             layers = <0 1>;
         };
 
@@ -60,7 +60,7 @@
         };
 
         backspace {
-            bindings = <&none>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <9 10>;
         };
     };
