@@ -64,6 +64,8 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <1 2>;
+            timeout-ms = <30>;
+            layers = <0 1>;
         };
     };
 
