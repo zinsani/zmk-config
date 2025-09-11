@@ -22,9 +22,9 @@
     combos {
         compatible = "zmk,combos";
 
-        esc_and_a_to_caps {
-            bindings = <&kp CAPS>;
-            key-positions = <7 7 8>;
+        tap {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <31 32>;
             layers = <0 1>;
             timeout-ms = <30>;
         };
@@ -37,40 +37,33 @@
         };
 
         left_shift_esc {
-            bindings = <&mt LEFT_SHIFT ESCAPE>;
+            bindings = <&kp ESCAPE>;
             key-positions = <16 15>;
             timeout-ms = <30>;
         };
 
         right_shift_enter {
-            bindings = <&mt RIGHT_SHIFT ENTER>;
+            bindings = <&kp ENTER>;
             key-positions = <19 20>;
             timeout-ms = <30>;
         };
 
         toggle_colemak {
             bindings = <&tog 1>;
-            key-positions = <1 2>;
+            key-positions = <1 0>;
             timeout-ms = <30>;
             layers = <0 1>;
-        };
-
-        left_option {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <13 14>;
-            timeout-ms = <30>;
-        };
-
-        right_alt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <21 22>;
-            timeout-ms = <30>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 10>;
             timeout-ms = <30>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
         };
     };
 
