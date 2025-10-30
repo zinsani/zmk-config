@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -37,14 +36,7 @@
 
         toggle_colemak {
             bindings = <&tog 1>;
-            key-positions = <28 29>;
-            timeout-ms = <30>;
-            layers = <0 1>;
-        };
-
-        Misc {
-            bindings = <&mo 4>;
-            key-positions = <38 39>;
+            key-positions = <27 28>;
             timeout-ms = <30>;
             layers = <0 1>;
         };
@@ -81,10 +73,10 @@
 
         default_layer {
             bindings = <
-&kp TAB                  &kp Q  &kp W  &kp E      &kp R         &kp T           &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D      &kp F         &kp G           &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT                &kp Z  &kp X  &kp C      &kp V         &kp B           &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
-                                       &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT    &mo 2  &kp SPACE  &mo 3
+&kp TAB                  &kp Q  &kp W  &kp E      &kp R         &kp T           &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D      &kp F         &kp G           &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT                &kp Z  &kp X  &kp C      &kp V         &kp B           &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
+                                       &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT    &kp SPACE  &mo 2  &mo 3
             >;
         };
 
@@ -110,7 +102,7 @@
 
         raise_layer {
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3     &kp F4        &kp F5             &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none           &none
+&trans  &kp F1   &kp F2   &kp F3     &kp F4        &kp F5             &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT      &kp DELETE
 &trans  &kp F6   &kp F7   &kp F8     &kp F9        &kp F10            &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &msc SCRL_DOWN  &msc SCRL_UP
 &trans  &kp F11  &kp F12  &kp GLOBE  &kp CAPSLOCK  &kp PRINTSCREEN    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK       &mkp RCLK
                           &trans     &trans        &trans             &trans          &trans          &trans
@@ -121,33 +113,22 @@
 
         misc_layer {
             bindings = <
-&none  &none              &none          &none              &none  &none          &none            &none            &none            &none            &none            &none
-&none  &kp C_VOL_UP       &kp C_BRI_INC  &soft_off          &none  &sys_reset     &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
-&none  &kp C_VOLUME_DOWN  &kp C_BRI_DEC  &ext_power EP_TOG  &none  &bootloader    &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &none
-                                         &none              &none  &none          &none            &none            &none
+&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &none            &none            &none            &none            &none            &none
+&none       &kp C_VOL_UP       &kp C_BRI_INC  &soft_off          &none         &sys_reset      &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
+&none       &kp C_VOLUME_DOWN  &kp C_BRI_DEC  &ext_power EP_TOG  &none         &bootloader     &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &none
+                                              &none              &none         &none           &none            &none            &none
             >;
 
             label = "MISC";
-        };
-
-        bt_fn {
-            bindings = <
-&none  &none         &none         &none         &none         &none             &none  &none  &none   &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none  &none  &none   &none  &none  &none
-&none  &out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR    &bt BT_CLR_ALL    &none  &none  &none   &none  &none  &none
-                                   &trans        &trans        &none             &none  &none  &trans
-            >;
-
-            label = "BLUETOOTH AND FUNCTION";
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        Bluetooth {
-            if-layers = <2 3>;
-            then-layer = <5>;
+        Misc {
+            if-layers = <4>;
+            then-layer = <3>;
         };
     };
 };
