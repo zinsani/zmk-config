@@ -127,8 +127,8 @@
         compatible = "zmk,conditional-layers";
 
         Misc {
-            if-layers = <4>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 };
