@@ -18,6 +18,8 @@
 #define RAISE   3
 #define MISC    4
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     combos {
         compatible = "zmk,combos";
