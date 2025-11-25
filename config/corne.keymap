@@ -99,7 +99,7 @@
         compatible = "zmk,conditional-layers";
 
         Misc {
-            if-layers = <3 4>;
+            if-layers = <3 2>;
             then-layer = <4>;
         };
     };
