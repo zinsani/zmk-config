@@ -23,24 +23,10 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <31 32>;
-            layers = <0 1>;
-            timeout-ms = <30>;
-        };
-
         spacebar {
             bindings = <&kp SPACE>;
-            key-positions = <19 20>;
+            key-positions = <39 40>;
             timeout-ms = <30>;
-        };
-
-        toggle_colemak {
-            bindings = <&tog 1>;
-            key-positions = <27 28>;
-            timeout-ms = <30>;
-            layers = <0 1>;
         };
 
         tab {
@@ -48,35 +34,9 @@
             key-positions = <1 2>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <18 19>;
-        };
-    };
-
-    behaviors {
-        td_shift_gui: td_shift_gui {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SHIFT_GUI";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT>, <&kp RIGHT_GUI>;
-        };
-
-        td_tap_esc: td_tap_esc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_TAP_ESC";
-            #binding-cells = <0>;
-            bindings = <&lt 3 ESCAPE>, <&kp TAB>;
-
-            tapping-term-ms = <150>;
-        };
-
-        td_esc_caps: td_esc_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_ESC_CAPS";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&mt LEFT_ALT ESCAPE>, <&kp CAPSLOCK>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 9>;
         };
     };
 
