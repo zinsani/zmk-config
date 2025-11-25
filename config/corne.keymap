@@ -63,10 +63,10 @@
 
         lower_layer {
             bindings = <
-&trans                     &kp EXCL        &kp AT           &kp HASH          &kp DLLR           &kp PRCNT        &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&mt PIPE NON_US_BACKSLASH  &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3      &kp NUMBER_4       &kp N5           &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &mt UNDERSCORE MINUS
-&trans                     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH    &kp MINUS  &kp PLUS  &trans     &trans    &trans    &trans
-                                                            &trans            &trans             &trans           &trans     &trans    &trans
+&trans  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT        &kp CARET         &kp AMPS           &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5           &kp N6            &kp N7             &kp N8     &kp N9    &kp N0    &trans
+&trans  &none         &none         &none         &none         &kp BACKSLASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans    &trans    &trans
+                                    &trans        &trans        &trans           &trans            &trans             &trans
             >;
 
             label = "SYM_NUM";
@@ -75,8 +75,8 @@
         raise_layer {
             bindings = <
 &trans  &kp F1           &kp F2           &kp F3             &kp F4               &kp F5             &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP                             &kp END    &kp BACKSPACE  &trans
-&tog 1  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10            &kp LEFT  &kp DOWN           &kp UP_ARROW                            &kp RIGHT  &kp DELETE     &kp RG(C_AC_SEARCH)
-&trans  &kp F11          &kp F12          &kp GLOBE          &kp CAPSLOCK         &kp PRINTSCREEN    &none     &kp K_APPLICATION  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none      &kp INS        &trans
+&trans  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10            &kp LEFT  &kp DOWN           &kp UP_ARROW                            &kp RIGHT  &kp DELETE     &trans
+&tog 1  &kp F11          &kp F12          &kp GLOBE          &kp CAPSLOCK         &kp PRINTSCREEN    &none     &kp K_APPLICATION  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none      &kp INS        &kp C_AC_SEARCH
                                           &trans             &trans               &trans             &trans    &trans             &trans
             >;
 
