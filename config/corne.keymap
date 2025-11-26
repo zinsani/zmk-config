@@ -85,10 +85,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp F1           &kp F2           &kp F3             &kp F4               &kp F5             &kp HOME  &kp PAGE_DOWN      &kp PAGE_UP                             &kp END    &kp BACKSPACE  &trans
-&trans  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10            &kp LEFT  &kp DOWN           &kp UP_ARROW                            &kp RIGHT  &kp DELETE     &trans
-&tog 1  &kp F11          &kp F12          &kp GLOBE          &kp CAPSLOCK         &kp PRINTSCREEN    &none     &kp K_APPLICATION  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none      &kp INS        &kp C_AC_SEARCH
-                                          &trans             &trans               &trans             &trans    &trans             &trans
+&trans  &kp F1           &kp F2           &kp F3             &kp F4               &kp F5             &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP                             &kp END    &kp BACKSPACE  &trans
+&trans  &mt LEFT_GUI F6  &mt LEFT_ALT F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10            &kp LEFT  &kp DOWN       &kp UP_ARROW                            &kp RIGHT  &kp DELETE     &trans
+&trans  &kp F11          &kp F12          &kp GLOBE          &kp CAPSLOCK         &kp PRINTSCREEN    &none     &tog 1         &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &none      &kp INS        &kp C_AC_SEARCH
+                                          &trans             &trans               &trans             &trans    &trans         &trans
             >;
 
             label = "FN_NAVI";
