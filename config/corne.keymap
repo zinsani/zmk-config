@@ -36,28 +36,11 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        spacebar {
-            bindings = <&kp SPACE>;
-            key-positions = <39 40>;
-            timeout-ms = <30>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <1 2>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         // Positional Home Row Mods - Left hand
+
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -66,11 +49,13 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
 
         // Positional Home Row Mods - Right hand
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -79,6 +64,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
@@ -96,6 +82,7 @@
             label = "TD_SPACE";
             #binding-cells = <0>;
             bindings = <&mt LGUI SPACE>, <&kp SPACE>;
+
             tapping-term-ms = <100>;
         };
     };
@@ -105,28 +92,28 @@
 
         default_layer {
             bindings = <
-&none             &kp Q        &kp W        &kp E          &kp R          &kp T        &kp Y              &kp U          &kp I           &kp O        &kp P             &none
-&none             &hml LGUI A  &hml LALT S  &hml LSHIFT D  &hml LCTRL F   &kp G        &kp H              &hmr RCTRL J   &hmr RSHIFT K   &hmr RALT L  &hmr RGUI SEMI    &none
-&mt LSHFT ESCAPE  &kp Z        &kp X        &kp C          &kp V          &kp B        &kp N              &kp M          &kp COMMA       &kp DOT      &kp FSLH          &mt RSHFT SQT
-                                            &kp TAB        &lt 3 GRAVE    &td_space    &mt RSHFT ENTER    &lt 2 MINUS    &kp EQUAL
+&none             &kp Q        &kp W        &kp E          &kp R         &kp T        &kp Y            &kp U         &kp I          &kp O        &kp P           &none
+&none             &hml LGUI A  &hml LALT S  &hml LSHIFT D  &hml LCTRL F  &kp G        &kp H            &hmr RCTRL J  &hmr RSHIFT K  &hmr RALT L  &hmr RGUI SEMI  &none
+&mt LSHFT ESCAPE  &kp Z        &kp X        &kp C          &kp V         &kp B        &kp N            &kp M         &kp COMMA      &kp DOT      &kp FSLH        &mt RSHFT SQT
+                                            &kp TAB        &lt 3 GRAVE   &kp SPACE    &mt RSHFT ENTER  &mo 2         &kp EQUAL
             >;
         };
 
         colemak_layer {
             bindings = <
-&trans  &kp Q        &kp W        &kp F          &kp P          &kp G     &kp J   &kp L          &kp U           &kp Y        &kp SEMI      &trans
-&trans  &hml LGUI A  &hml LALT R  &hml LSHIFT S  &hml LCTRL T   &kp D     &kp H   &hmr RCTRL N   &hmr RSHIFT E   &hmr RALT I  &hmr RGUI O   &trans
-&trans  &kp Z        &kp X        &kp C          &kp V          &kp B     &kp K   &kp M          &trans          &trans       &trans        &trans
-                                  &trans         &trans         &trans    &trans  &trans         &trans
+&trans  &kp Q        &kp W        &kp F          &kp P         &kp G     &kp J   &kp L         &kp U          &kp Y        &kp SEMI     &trans
+&trans  &hml LGUI A  &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp D     &kp H   &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O  &trans
+&trans  &kp Z        &kp X        &kp C          &kp V         &kp B     &kp K   &kp M         &trans         &trans       &trans       &trans
+                                  &trans         &trans        &trans    &trans  &trans        &trans
             >;
         };
 
         lower_layer {
             bindings = <
-&trans  &kp EXCL         &kp AT         &kp HASH          &kp DLLR         &kp PRCNT        &kp CARET  &kp AMPS       &kp ASTRK        &kp LPAR       &kp RPAR       &trans
-&trans  &hml LGUI N1     &hml LALT N2   &hml LSHIFT N3    &hml LCTRL N4    &kp N5           &kp N6     &hmr RCTRL N7  &hmr RSHIFT N8   &hmr RALT N9   &hmr RGUI N0   &trans
-&trans  &none            &none          &kp LBRC          &kp RBRC         &kp BSLH         &kp LBKT   &kp RBKT       &trans           &trans         &trans         &trans
-                                        &trans            &trans           &td_space        &trans     &trans         &trans
+&trans  &kp EXCL      &kp AT        &kp HASH        &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTRK       &kp LPAR      &kp RPAR      &trans
+&trans  &hml LGUI N1  &hml LALT N2  &hml LSHIFT N3  &hml LCTRL N4  &kp N5       &kp N6     &hmr RCTRL N7  &hmr RSHIFT N8  &hmr RALT N9  &hmr RGUI N0  &trans
+&trans  &kp MINUS     &kp EQUAL     &kp LBRC        &kp RBRC       &kp BSLH     &kp LBKT   &kp RBKT       &trans          &trans        &trans        &trans
+                                    &trans          &trans         &trans       &trans     &trans         &trans
             >;
 
             label = "SYM_NUM";
@@ -134,10 +121,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp F1         &kp F2         &kp F3          &kp F4          &kp F5             &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP                             &kp END         &kp BSPC    &trans
-&trans  &hml LGUI F6   &hml LALT F7   &hml LSHIFT F8  &hml LCTRL F9   &kp F10            &kp LEFT   &kp DOWN       &kp UP_ARROW                            &kp RIGHT       &kp DELETE  &trans
-&trans  &kp F11        &kp F12        &kp GLOBE       &kp CAPSLOCK    &kp PRINTSCREEN    &tog 1     &kp K_APP      &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_AC_SEARCH &kp INS     &trans
-                                      &trans          &trans          &td_space          &trans     &trans         &trans
+&trans  &kp F1        &kp F2        &kp F3          &kp F4         &kp F5             &kp HOME  &kp PAGE_DOWN                     &kp PAGE_UP                                     &kp END                     &kp BSPC            &trans
+&trans  &hml LGUI F6  &hml LALT F7  &hml LSHIFT F8  &hml LCTRL F9  &kp F10            &kp LEFT  &kp DOWN                          &kp UP_ARROW                                    &kp RIGHT                   &kp DELETE          &trans
+&trans  &kp F11       &kp F12       &kp GLOBE       &kp CAPSLOCK   &kp PRINTSCREEN    &tog 1    &hmr RIGHT_CONTROL K_APPLICATION  &hmr RIGHT_SHIFT C_AC_DESKTOP_SHOW_ALL_WINDOWS  &hmr RIGHT_ALT C_AC_SEARCH  &hmr RIGHT_GUI INS  &trans
+                                    &trans          &trans         &trans             &trans    &trans                            &trans
             >;
 
             label = "FN_NAVI";
@@ -145,7 +132,7 @@
 
         misc_layer {
             bindings = <
-&none  &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR       &none            &none            &none            &none            &none
+&none  &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &tog 1           &none            &none            &none            &none            &bt BT_CLR
 &none  &kp C_VOL_UP       &kp C_BRI_INC  &soft_off          &out OUT_TOG  &sys_reset      &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &none
 &none  &kp C_VOLUME_DOWN  &kp C_BRI_DEC  &ext_power EP_TOG  &none         &bootloader     &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &none
                                          &none              &none         &none           &none            &none            &none
