@@ -110,10 +110,10 @@
 
         lower_layer {
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH        &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTRK       &kp LPAR      &kp RPAR      &trans
-&trans  &hml LGUI N1  &hml LALT N2  &hml LSHIFT N3  &hml LCTRL N4  &kp N5       &kp N6     &hmr RCTRL N7  &hmr RSHIFT N8  &hmr RALT N9  &hmr RGUI N0  &trans
-&trans  &kp MINUS     &kp EQUAL     &kp LBRC        &kp RBRC       &kp BSLH     &kp LBKT   &kp RBKT       &trans          &trans        &trans        &trans
-                                    &trans          &trans         &trans       &trans     &trans         &trans
+&trans     &kp EXCL      &kp AT        &kp HASH        &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTRK       &kp LPAR      &kp RPAR      &trans
+&trans     &hml LGUI N1  &hml LALT N2  &hml LSHIFT N3  &hml LCTRL N4  &kp N5       &kp N6     &hmr RCTRL N7  &hmr RSHIFT N8  &hmr RALT N9  &hmr RGUI N0  &trans
+&kp TILDE  &kp MINUS     &kp PLUS      &kp LBRC        &kp RBRC       &kp BSLH     &kp LBKT   &kp RBKT       &trans          &trans        &trans        &kp BACKSLASH
+                                       &trans          &trans         &trans       &trans     &trans         &trans
             >;
 
             label = "SYM_NUM";
