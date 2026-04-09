@@ -113,28 +113,28 @@
 
         default_layer {
             bindings = <
-&none             &kp Q        &kp W        &kp E          &kp R         &kp T        &kp Y            &kp U         &kp I          &kp O        &kp P           &none
-&none             &hml LGUI A  &hml LALT S  &hml LSHIFT D  &hml LCTRL F  &kp G        &kp H            &hmr RCTRL J  &hmr RSHIFT K  &hmr RALT L  &hmr RGUI SEMI  &none
-&mt LSHFT ESCAPE  &kp Z        &kp X        &kp C          &kp V         &kp B        &kp N            &kp M         &kp COMMA      &kp DOT      &kp FSLH        &mt RSHFT SQT
-                                            &kp TAB        &mo 3         &kp SPACE    &mt RSHFT ENTER  &mo 2         &kp EQUAL
+&none             &kp Q            &kp W            &kp E          &kp R         &kp T        &kp Y            &kp U         &kp I              &kp O                  &kp P                 &none
+&none             &kp A            &kp S            &kp D          &kp F         &kp G        &kp H            &kp J         &kp K              &kp L                  &kp SEMICOLON         &none
+&mt LSHFT ESCAPE  &hml LEFT_GUI Z  &hml LEFT_ALT X  &hml LSHIFT C  &hml LCTRL V  &kp B        &kp N            &hmr RCTRL M  &hmr RSHIFT COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_GUI SLASH  &mt RSHFT EQUAL
+                                                    &kp TAB        &mo 3         &kp SPACE    &mt RSHFT ENTER  &mo 2         &kp MINUS
             >;
         };
 
         colemak_layer {
             bindings = <
-&trans  &kp Q        &kp W        &kp F          &kp P         &kp G     &kp J   &kp L         &kp U          &kp Y        &kp SEMI     &trans
-&trans  &hml LGUI A  &hml LALT R  &hml LSHIFT S  &hml LCTRL T  &kp D     &kp H   &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O  &trans
-&trans  &kp Z        &kp X        &kp C          &kp V         &kp B     &kp K   &kp M         &trans         &trans       &trans       &trans
-                                  &trans         &trans        &trans    &trans  &trans        &trans
+&trans  &kp Q            &kp W            &kp F              &kp P         &kp G     &kp J   &kp L         &kp U   &kp Y   &kp SEMI  &trans
+&trans  &kp A            &kp R            &kp S              &kp T         &kp D     &kp H   &kp N         &kp E   &kp I   &kp O     &trans
+&trans  &hml LEFT_GUI Z  &hml LEFT_ALT X  &hml LEFT_SHIFT C  &hml LCTRL V  &kp B     &kp K   &hmr RCTRL M  &trans  &trans  &trans    &trans
+                                          &trans             &trans        &trans    &trans  &trans        &trans
             >;
         };
 
         lower_layer {
             bindings = <
-&trans     &kp EXCL      &kp AT        &kp HASH        &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTRK       &kp LPAR      &kp RPAR      &trans
-&trans     &hml LGUI N1  &hml LALT N2  &hml LSHIFT N3  &hml LCTRL N4  &kp N5       &kp N6     &hmr RCTRL N7  &hmr RSHIFT N8  &hmr RALT N9  &hmr RGUI N0  &trans
-&kp GRAVE  &kp MINUS     &kp PLUS      &kp LBRC        &kp RBRC       &kp BSLH     &kp LBKT   &kp RBKT       &trans          &trans        &trans        &kp BACKSLASH
-                                       &trans          &trans         &trans       &trans     &trans         &trans
+&trans                    &kp EXCL                  &kp AT                     &kp HASH                      &kp DLLR                  &kp PRCNT    &kp CARET  &kp AMPS                 &kp ASTRK     &kp LPAR      &kp RPAR      &trans
+&trans                    &kp NUMBER_1              &kp NUMBER_2               &kp NUMBER_3                  &kp NUMBER_4              &kp N5       &kp N6     &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&mt LEFT_SHIFT BACKSLASH  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_ALT RIGHT_BRACE  &hml LEFT_SHIFT LEFT_BRACKET  &hml LCTRL RIGHT_BRACKET  &trans       &kp GRAVE  &hmr RCTRL SINGLE_QUOTE  &trans        &trans        &trans        &trans
+                                                                               &trans                        &trans                    &trans       &trans     &trans                   &trans
             >;
 
             label = "SYM_NUM";
@@ -142,10 +142,10 @@
 
         raise_layer {
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3          &kp F4         &kp F5             &kp HOME  &kp PAGE_DOWN                     &kp PAGE_UP                                     &kp END                     &kp BSPC            &trans
-&trans  &hml LGUI F6  &hml LALT F7  &hml LSHIFT F8  &hml LCTRL F9  &kp F10            &kp LEFT  &kp DOWN                          &kp UP_ARROW                                    &kp RIGHT                   &kp DELETE          &trans
-&trans  &kp F11       &kp F12       &kp GLOBE       &kp CAPSLOCK   &kp PRINTSCREEN    &tog 1    &hmr RIGHT_CONTROL K_APPLICATION  &hmr RIGHT_SHIFT C_AC_DESKTOP_SHOW_ALL_WINDOWS  &hmr RIGHT_ALT C_AC_SEARCH  &hmr RIGHT_GUI INS  &trans
-                                    &trans          &trans         &trans             &trans    &trans                            &trans
+&trans  &kp F1             &kp F2             &kp F3                 &kp F4               &kp F5             &kp HOME  &kp PAGE_DOWN                     &kp PAGE_UP                                     &kp END                     &kp BSPC            &trans
+&trans  &kp F6             &kp F7             &kp F8                 &kp F9               &kp F10            &kp LEFT  &kp DOWN                          &kp UP_ARROW                                    &kp RIGHT                   &kp DELETE          &trans
+&trans  &hml LEFT_GUI F11  &hml LEFT_ALT F12  &hml LEFT_SHIFT GLOBE  &hml LCTRL CAPSLOCK  &kp PRINTSCREEN    &trans    &hmr RIGHT_CONTROL K_APPLICATION  &hmr RIGHT_SHIFT C_AC_DESKTOP_SHOW_ALL_WINDOWS  &hmr RIGHT_ALT C_AC_SEARCH  &hmr RIGHT_GUI INS  &trans
+                                              &trans                 &trans               &trans             &trans    &trans                            &trans
             >;
 
             label = "FN_NAVI";
