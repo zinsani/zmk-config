@@ -1,0 +1,227 @@
+layout: {zmk_keyboard: corne}
+layers:
+  default:
+  - ''
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - ''
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''
+  - {t: ESCAPE, h: LSHIFT}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: '''', h: RSHIFT}
+  - {t: TAB, h: LCTRL}
+  - {t: '`', h: LALT}
+  - '&td_space'
+  - {t: ENTER, h: RIGHT SHIFT}
+  - {t: '-', h: SYM_NUM}
+  - {t: '=', h: FN_NAVI}
+  colemak:
+  - {t: ▽, type: trans}
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - R
+  - S
+  - T
+  - D
+  - H
+  - N
+  - E
+  - I
+  - O
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - K
+  - M
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYM_NUM:
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - \
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  FN_NAVI:
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: F6, h: LEFT GUI}
+  - {t: F7, h: LEFT ALT}
+  - {t: F8, h: LEFT SHIFT}
+  - {t: F9, h: LEFT CONTROL}
+  - F10
+  - LEFT
+  - DOWN
+  - UP ARROW
+  - RIGHT
+  - DELETE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F12
+  - GLOBE
+  - CAPSLOCK
+  - PRINTSCREEN
+  - ''
+  - {t: colemak, h: toggle}
+  - AC DESKTOP SHOW ALL APPLICATIONS
+  - ''
+  - INS
+  - AC SEARCH
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  MISC:
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - VOL UP
+  - BRI INC
+  - '&soft_off'
+  - OUT TOG
+  - '&sys_reset'
+  - RGB SPI
+  - RGB SAI
+  - RGB HUI
+  - RGB BRI
+  - RGB EFF
+  - ''
+  - ''
+  - VOLUME DOWN
+  - BRI DEC
+  - EP TOG
+  - ''
+  - '&bootloader'
+  - RGB SPD
+  - RGB SAD
+  - RGB HUD
+  - RGB BRD
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+combos:
+- p: [1, 2]
+  k: TAB
+  l: [default, colemak]
+- p: [9, 10]
+  k: BACKSPACE
+  l: [default, colemak]
+- p: [39, 40]
+  k: SPACE
+  l: [default, colemak]
