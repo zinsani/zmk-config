@@ -25,24 +25,24 @@ layers:
   - L
   - ;
   - ''
-  - {t: ESCAPE, h: LSHIFT}
-  - Z
-  - X
-  - C
-  - V
+  - LSHFT
+  - {t: Z, h: LEFT GUI}
+  - {t: X, h: LEFT ALT}
+  - {t: C, h: LSHIFT}
+  - {t: V, h: LCTRL}
   - B
   - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: '''', h: RSHIFT}
-  - {t: TAB, h: LCTRL}
-  - {t: '`', h: LALT}
-  - '&td_space'
-  - {t: ENTER, h: RIGHT SHIFT}
-  - {t: '-', h: SYM_NUM}
-  - {t: '=', h: FN_NAVI}
+  - {t: M, h: RCTRL}
+  - {t: ',', h: RSHIFT}
+  - {t: ., h: RIGHT ALT}
+  - {t: /, h: RIGHT GUI}
+  - {t: '=', h: RSHFT}
+  - ESC
+  - FN_NAVI
+  - SPACE
+  - {t: ENTER, h: RSHFT}
+  - SYM_NUM
+  - '-'
   colemak:
   - {t: ▽, type: trans}
   - Q
@@ -69,13 +69,13 @@ layers:
   - O
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
+  - {t: Z, h: LEFT GUI}
+  - {t: X, h: LEFT ALT}
+  - {t: C, h: LEFT SHIFT}
+  - {t: V, h: LCTRL}
   - B
   - K
-  - M
+  - {t: M, h: RCTRL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -112,18 +112,18 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - \
-  - '['
-  - ']'
+  - {t: '{', h: LEFT GUI}
+  - {t: '}', h: LEFT ALT}
+  - {t: '[', h: LEFT SHIFT}
+  - {t: ']', h: LCTRL}
+  - {t: ▽, type: trans}
+  - '"'
+  - {t: '''', h: RCTRL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: \, h: RIGHT GUI}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,13 +140,13 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - END
-  - BACKSPACE
+  - BSPC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: F6, h: LEFT GUI}
-  - {t: F7, h: LEFT ALT}
-  - {t: F8, h: LEFT SHIFT}
-  - {t: F9, h: LEFT CONTROL}
+  - F6
+  - F7
+  - F8
+  - F9
   - F10
   - LEFT
   - DOWN
@@ -155,23 +155,23 @@ layers:
   - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F11
-  - F12
-  - GLOBE
-  - CAPSLOCK
+  - {t: F11, h: LEFT GUI}
+  - {t: F12, h: LEFT ALT}
+  - {t: GLOBE, h: LEFT SHIFT}
+  - {t: CAPSLOCK, h: LCTRL}
   - PRINTSCREEN
-  - ''
-  - {t: colemak, h: toggle}
-  - AC DESKTOP SHOW ALL APPLICATIONS
-  - ''
-  - INS
-  - AC SEARCH
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: APPLICATION, h: RIGHT CONTROL}
+  - {t: AC DESKTOP SHOW ALL WINDOWS, h: RIGHT SHIFT}
+  - {t: AC SEARCH, h: RIGHT ALT}
+  - {t: INS, h: RIGHT GUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   MISC:
   - ''
   - {t: BT, h: '0'}
@@ -179,12 +179,12 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: colemak, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
   - BT CLR
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - VOL UP
   - BRI INC
@@ -210,11 +210,11 @@ layers:
   - RGB TOG
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - {type: held}
-  - {type: held}
+  - ''
 combos:
 - p: [1, 2]
   k: TAB
