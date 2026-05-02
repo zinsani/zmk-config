@@ -113,10 +113,10 @@
 
         default_layer {
             bindings = <
-&none             &kp Q            &kp W            &kp E          &kp R         &kp T        &kp Y            &kp U         &kp I              &kp O                  &kp P                 &none
-&none             &kp A            &kp S            &kp D          &kp F         &kp G        &kp H            &kp J         &kp K              &kp L                  &kp SEMICOLON         &none
-&mt LSHFT ESCAPE  &hml LEFT_GUI Z  &hml LEFT_ALT X  &hml LSHIFT C  &hml LCTRL V  &kp B        &kp N            &hmr RCTRL M  &hmr RSHIFT COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_GUI SLASH  &mt RSHFT EQUAL
-                                                    &kp TAB        &mo 3         &kp SPACE    &mt RSHFT ENTER  &mo 2         &kp MINUS
+&none      &kp Q            &kp W            &kp E          &kp R         &kp T        &kp Y            &kp U         &kp I              &kp O                  &kp P                 &none
+&none      &kp A            &kp S            &kp D          &kp F         &kp G        &kp H            &kp J         &kp K              &kp L                  &kp SEMICOLON         &none
+&kp LSHFT  &hml LEFT_GUI Z  &hml LEFT_ALT X  &hml LSHIFT C  &hml LCTRL V  &kp B        &kp N            &hmr RCTRL M  &hmr RSHIFT COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_GUI SLASH  &mt RSHFT EQUAL
+                                             &kp ESC        &mo 3         &kp SPACE    &mt RSHFT ENTER  &mo 2         &kp MINUS
             >;
         };
 
@@ -131,10 +131,10 @@
 
         lower_layer {
             bindings = <
-&trans                    &kp EXCL                  &kp AT                     &kp HASH                      &kp DLLR                  &kp PRCNT    &kp CARET  &kp AMPS                 &kp ASTRK     &kp LPAR      &kp RPAR      &trans
-&trans                    &kp NUMBER_1              &kp NUMBER_2               &kp NUMBER_3                  &kp NUMBER_4              &kp N5       &kp N6     &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&mt LEFT_SHIFT BACKSLASH  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_ALT RIGHT_BRACE  &hml LEFT_SHIFT LEFT_BRACKET  &hml LCTRL RIGHT_BRACKET  &trans       &kp GRAVE  &hmr RCTRL SINGLE_QUOTE  &trans        &trans        &trans        &trans
-                                                                               &trans                        &trans                    &trans       &trans     &trans                   &trans
+&trans  &kp EXCL                  &kp AT                     &kp HASH                      &kp DLLR                  &kp PRCNT    &kp CARET          &kp AMPS                 &kp ASTRK     &kp LPAR      &kp RPAR             &trans
+&trans  &kp NUMBER_1              &kp NUMBER_2               &kp NUMBER_3                  &kp NUMBER_4              &kp N5       &kp N6             &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0         &trans
+&trans  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_ALT RIGHT_BRACE  &hml LEFT_SHIFT LEFT_BRACKET  &hml LCTRL RIGHT_BRACKET  &trans       &kp DOUBLE_QUOTES  &hmr RCTRL SINGLE_QUOTE  &trans        &trans        &hmr RIGHT_GUI BACKSLASH   &trans
+                                                             &kp TAB                       &trans                    &trans       &trans             &trans                   &trans
             >;
 
             label = "SYM_NUM";
