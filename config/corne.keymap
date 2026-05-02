@@ -20,23 +20,26 @@
 &mt { flavor = "balanced"; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        spacebar {
-            bindings = <&kp SPACE>;
-            key-positions = <39 40>;
-            timeout-ms = <30>;
-        };
-
+    combos { compatible = "zmk,combos";
         tab {
-            bindings = <&kp TAB>;
+            timeout-ms = <30>;
             key-positions = <1 2>;
+            bindings = <&kp TAB>;
+            layers = <0 1>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
+            key-positions = <9 10>;
+            timeout-ms = <30>;
+            layers = <0 1>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <39 40>;
+            timeout-ms = <30>;
+            layers = <0 1>;
         };
     };
 
