@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - config/corne.keymap
+      - keymap_drawer.config.yaml
   workflow_dispatch:
 
 jobs:
