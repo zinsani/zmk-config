@@ -1,8 +1,6 @@
 name: Draw Keymap
 on:
   push:
-    branches:
-      - main
     paths:
       - config/corne.keymap
       - keymap_drawer.config.yaml
@@ -18,3 +16,4 @@ jobs:
       config_path: keymap_drawer.config.yaml
       west_config_path: config
       output_folder: keymap-drawer
+
