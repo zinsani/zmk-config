@@ -1,0 +1,38 @@
+# keymap_drawer.config.yaml - Corne keyboard keymap visualization
+# Generated for zmk-config repo (corne.keymap)
+
+layout:
+  zmk_keyboard: corne
+
+layers:
+  default:
+    - [&none, Q, W, E, R, T, Y, U, I, O, P, &none]
+    - [&none, A, S, D, F, G, H, J, K, L, SEMICOLON, &none]
+    - [ESCAPE, Z, X, C, V, B, N, M, COMMA, DOT, FSLH, "'"]
+    - [TAB, GRAVE, SPACE, MINUS, EQUAL, ENTER]
+  colemak:
+    - [&trans, Q, W, F, P, G, J, L, U, Y, SEMICOLON, &trans]
+    - [&trans, A, R, S, T, D, H, N, E, I, O, &trans]
+    - [&trans, Z, X, C, V, B, K, M, &trans, &trans, &trans, &trans]
+    - [&trans, &trans, &trans, &trans, &trans, &trans]
+  sym_num:
+    - [&trans, EXCL, AT, HASH, DLLR, PRCNT, CARET, AMPS, ASTRK, LPAR, RPAR, &trans]
+    - [&trans, N1, N2, N3, N4, N5, N6, N7, N8, N9, N0, &trans]
+    - [&trans, &none, &none, &none, &none, BACKSLASH, LBRC, RBRC, &trans, &trans, &trans, &trans]
+    - [&trans, &trans, &trans, &trans, &trans, &trans]
+  fn_navi:
+    - [&trans, F1, F2, F3, F4, F5, HOME, PGDN, PGUP, END, BACKSPACE, &trans]
+    - [&trans, F6, F7, F8, F9, F10, LEFT, DOWN, UP, RIGHT, DELETE, &trans]
+    - [&trans, F11, F12, GLOBE, CAPS, PRTSC, &none, TOG, C_AC_DESK, &none, INS, C_AC_SEARCH]
+    - [&trans, &trans, &trans, &trans, &trans, &trans]
+  misc:
+    - [&none, BTN0, BTN1, BTN2, BTN3, BTN4, BTCLR, &none, &none, &none, &none, &none]
+    - [&none, VOLU, BRI, OFF, OUT, RST, SPI, SAI, HUE, BRI, EFF, &none]
+    - [&none, VOLD, BRI2, EP_TOG, &none, BOOT, SPD, SAD, HUD, BRD, RGB, &none]
+    - [&none, &none, &none, &none, &none, &none]
+
+draw_config:
+  n_columns: 1
+  draw_key_sides: true
+  shrink_wide_legends: 6
+  glyphs: {}

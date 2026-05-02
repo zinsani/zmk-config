@@ -1,0 +1,35 @@
+name: Draw Keymap
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - config/corne.keymap
+      - keymap_drawer.config.yaml
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install keymap-drawer
+        run: npm install -g keymap-drawer
+
+      - name: Generate keymap SVG
+        run: keymap-drawer draw -c keymap_drawer.config.yaml -o corne.svg
+
+      - name: Uploadartifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: corne-keymap
+          path: corne.svg
+          retention-days: 7
+
+      - name: Post comment
+        if: github.event_name == 'push'
+        run: echo "::notice::Keymap SVG generated: corne.svg"
