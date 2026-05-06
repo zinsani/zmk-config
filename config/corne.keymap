@@ -36,7 +36,9 @@
 };
 
 / {
-    combos { compatible = "zmk,combos";
+    combos {
+        compatible = "zmk,combos";
+
         tab {
             timeout-ms = <30>;
             key-positions = <1 2>;
@@ -131,9 +133,9 @@
 
         lower_layer {
             bindings = <
-&trans  &kp EXCL                  &kp AT                     &kp HASH                      &kp DLLR                  &kp PRCNT    &kp CARET          &kp AMPS                 &kp ASTRK     &kp LPAR      &kp RPAR             &trans
-&trans  &kp NUMBER_1              &kp NUMBER_2               &kp NUMBER_3                  &kp NUMBER_4              &kp N5       &kp N6             &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0         &trans
-&trans  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_ALT RIGHT_BRACE  &hml LEFT_SHIFT LEFT_BRACKET  &hml LCTRL RIGHT_BRACKET  &trans       &kp DOUBLE_QUOTES  &hmr RCTRL SINGLE_QUOTE  &trans        &trans        &hmr RIGHT_GUI BACKSLASH   &trans
+&trans  &kp EXCL                  &kp AT                     &kp HASH                      &kp DLLR                  &kp PRCNT    &kp CARET          &kp AMPS                 &kp ASTRK     &kp LPAR      &kp RPAR                  &trans
+&trans  &kp NUMBER_1              &kp NUMBER_2               &kp NUMBER_3                  &kp NUMBER_4              &kp N5       &kp N6             &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0              &trans
+&trans  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_ALT RIGHT_BRACE  &hml LEFT_SHIFT LEFT_BRACKET  &hml LCTRL RIGHT_BRACKET  &trans       &kp DOUBLE_QUOTES  &hmr RCTRL SINGLE_QUOTE  &trans        &trans        &hmr RIGHT_GUI BACKSLASH  &mt RSHIFT GRAVE
                                                              &kp TAB                       &trans                    &trans       &trans             &trans                   &trans
             >;
 
