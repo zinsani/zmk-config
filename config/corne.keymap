@@ -115,10 +115,10 @@
 
         default_layer {
             bindings = <
-&none             &kp Q            &kp W            &kp E          &kp R         &kp T        &kp Y            &kp U         &kp I              &kp O                  &kp P                 &none
-&none             &kp A            &kp S            &kp D          &kp F         &kp G        &kp H            &kp J         &kp K              &kp L                  &kp SEMICOLON         &none
-&mt LSHFT ESCAPE  &hml LEFT_GUI Z  &hml LEFT_ALT X  &hml LSHIFT C  &hml LCTRL V  &kp B        &kp N            &hmr RCTRL M  &hmr RSHIFT COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_GUI SLASH  &mt RSHFT EQUAL
-                                                    &kp TAB        &mo 3         &kp SPACE    &mt RSHFT ENTER  &mo 2         &kp MINUS
+&none             &kp Q            &kp W            &kp E                 &kp R         &kp T        &kp Y            &kp U         &kp I              &kp O                  &kp P                 &none
+&none             &kp A            &kp S            &kp D                 &kp F         &kp G        &kp H            &kp J         &kp K              &kp L                  &kp SEMICOLON         &none
+&mt LSHFT ESCAPE  &hml LEFT_GUI Z  &hml LEFT_ALT X  &hml LSHIFT C         &hml LCTRL V  &kp B        &kp N            &hmr RCTRL M  &hmr RSHIFT COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_GUI SLASH  &mt RSHFT EQUAL
+                                                    &mt LA(LC(LGUI)) TAB  &mo 3         &kp SPACE    &mt RSHFT ENTER  &mo 2         &kp MINUS
             >;
         };
 
