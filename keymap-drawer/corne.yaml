@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''
-  - LSHFT
+  - {t: ESCAPE, h: LSHFT}
   - {t: Z, h: LEFT GUI}
   - {t: X, h: LEFT ALT}
   - {t: C, h: LSHIFT}
@@ -37,7 +37,7 @@ layers:
   - {t: ., h: RIGHT ALT}
   - {t: /, h: RIGHT GUI}
   - {t: '=', h: RSHFT}
-  - ESC
+  - TAB
   - FN_NAVI
   - SPACE
   - {t: ENTER, h: RSHFT}
@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: \, h: RIGHT GUI}
   - {t: '`', h: RSHIFT}
-  - TAB
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
