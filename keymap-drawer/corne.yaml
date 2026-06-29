@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   default:
-  - ''
+  - '`'
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - ''
-  - ''
+  - '='
+  - {t: ESCAPE, h: LCTRL}
   - A
   - S
   - D
@@ -24,8 +24,8 @@ layers:
   - K
   - L
   - ;
-  - ''
-  - {t: ESCAPE, h: LSHFT}
+  - ''''
+  - LSHFT
   - {t: Z, h: LEFT GUI}
   - {t: X, h: LEFT ALT}
   - {t: C, h: LSHIFT}
@@ -36,7 +36,7 @@ layers:
   - {t: ',', h: RSHIFT}
   - {t: ., h: RIGHT ALT}
   - {t: /, h: RIGHT GUI}
-  - {t: '=', h: RSHFT}
+  - RSHFT
   - {t: TAB, h: Alt+Ctl+LGUI}
   - FN_NAVI
   - SPACE
@@ -98,7 +98,7 @@ layers:
   - '*'
   - (
   - )
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -117,12 +117,12 @@ layers:
   - {t: '[', h: LEFT SHIFT}
   - {t: ']', h: LCTRL}
   - {t: ▽, type: trans}
-  - '"'
-  - {t: '''', h: RCTRL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: \, h: RIGHT GUI}
-  - {t: '`', h: RSHIFT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
