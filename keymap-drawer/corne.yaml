@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   default:
-  - '`'
+  - {t: TAB, h: Ctl+Alt+LGUI}
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - '='
+  - BACKSPACE
   - {t: ESCAPE, h: LCTRL}
   - A
   - S
@@ -37,7 +37,7 @@ layers:
   - {t: ., h: RIGHT ALT}
   - {t: /, h: RIGHT GUI}
   - RSHFT
-  - {t: TAB, h: Alt+Ctl+LGUI}
+  - MOUSE
   - FN_NAVI
   - SPACE
   - {t: ENTER, h: RSHFT}
@@ -88,16 +88,16 @@ layers:
   - {t: ▽, type: trans}
   SYM_NUM:
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - '`'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '['
+  - ']'
   - \
   - {t: ▽, type: trans}
   - '1'
@@ -110,12 +110,12 @@ layers:
   - '8'
   - '9'
   - '0'
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '{', h: LEFT GUI}
-  - {t: '}', h: LEFT ALT}
-  - {t: '[', h: LEFT SHIFT}
-  - {t: ']', h: LCTRL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,6 +215,49 @@ layers:
   - ''
   - {type: held}
   - ''
+  MOUSE:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
 combos:
 - p: [1, 2]
   k: TAB
