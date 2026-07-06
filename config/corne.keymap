@@ -134,10 +134,10 @@
 
         lower_layer {
             bindings = <
-&trans  &kp GRAVE     &none         &none         &none         &none     &none   &none         &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0       &kp EQUAL
-&trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans            &trans             &trans
-                                    &trans        &trans        &trans    &trans  &trans        &trans
+&trans  &kp GRAVE     &none         &none         &none         &none     &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp EQUAL     &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9          &kp NUMBER_0  &trans
+&trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans            &trans             &trans                &trans        &trans
+                                    &trans        &trans        &trans    &trans  &trans            &trans
             >;
 
             label = "SYM_NUM";
